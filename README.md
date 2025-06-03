@@ -10,7 +10,7 @@ This project automates the creation of a university/college exam schedule based 
     *   An edge is created between two courses if at least one student is enrolled in both.
     *   The weight of the edge represents the number of students co-enrolled in both connected courses, indicating the severity of the conflict.
 3.  **Exam Slot Assignment (Graph Coloring):**
-    *   The [Greedy Graph Coloring](https://en.wikipedia.org/wiki/Greedy_coloring) algorithm (specifically using the "largest_first" strategy from NetworkX) is applied to the conflict graph.
+    *   The algorithm (specifically using the "largest_first" strategy from NetworkX) is applied to the conflict graph.
     *   Each color assigned by the algorithm represents a unique exam time slot. Adjacent nodes (conflicting courses) receive different colors, ensuring they are scheduled at different times.
     *   The project also benchmarks different coloring strategies (`smallest_last`, `random_sequential`, `independent_set`) for time and number of colors used.
 4.  **Room Assignment:**
